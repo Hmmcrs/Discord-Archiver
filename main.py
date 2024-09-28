@@ -113,15 +113,23 @@ def log_messages(messages):
             except Exception:
                 formatted_time = 'Unknown time'
 
-            if first_run and index == 0:
-                f.write(f"---\nUser: {username} (ID: {user_id})\n")
-                f.write(f"  Time: {formatted_time} (newest at script start)\n")
-                f.write(f"  Content: {content}\n")
-                f.write("---\n\n")
+            # Log the message
+            if all(ord(char) < 128 for char in content):  # Only log ASCII characters
+                if first_run and index == 0:
+                    f.write(f"---\nUser: {username} (ID: {user_id})\n")
+                    f.write(f"  Time: {formatted_time} (newest at script start)\n")
+                    f.write(f"  Content: {content}\n")
+                    f.write("---\n\n")
+                else:
+                    f.write(f"---\nUser: {username} (ID: {user_id})\n")
+                    f.write(f"  Time: {formatted_time}\n")
+                    f.write(f"  Content: {content}\n")
+                    f.write("---\n\n")
             else:
+                # Log the message as ignored due to unsupported characters
                 f.write(f"---\nUser: {username} (ID: {user_id})\n")
                 f.write(f"  Time: {formatted_time}\n")
-                f.write(f"  Content: {content}\n")
+                f.write(f"  Content: Ignored due to unsupported characters\n")
                 f.write("---\n\n")
 
 if __name__ == "__main__":
@@ -129,3 +137,4 @@ if __name__ == "__main__":
         status = fetch_messages()
         if status == 200:
             time.sleep(0.2)  # Wait before fetching again
+
