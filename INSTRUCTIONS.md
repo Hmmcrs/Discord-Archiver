@@ -16,6 +16,6 @@ If this does not work, use the following commands instead:
 Both the `main.py` script and `config.json` file should be on your Desktop for the tool to work correctly.
 
 ### 4. Modify `config.json`
-Open the `config.json` file and change the placeholders to your token and channel ID, then save the file.
+Open the `config.json` file and change the placeholders to [Your Token](https://www.androidauthority.com/get-discord-token-3149920/) and channel ID, then save the file.
 
 ### 5. Run the Script
