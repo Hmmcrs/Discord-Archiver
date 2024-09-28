@@ -4,7 +4,7 @@
 Download Python from [python.org](https://www.python.org/downloads/) (if you do not have it yet). During installation, check the box that says **Add Python to PATH**.
 
 ### 2. Install Required Packages
-Open Command Prompt (Windows) or Terminal (macOS/Linux) and run the following commands:
+Open Command Prompt (Windows) or Terminal (macOS/Linux) and run the commands below:
 - pip install requests
 - pip install python-dateutil
 
