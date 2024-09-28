@@ -1,47 +1,37 @@
 # Discord Message Scraper
 
-This tool allows you to scrape messages from Discord channels where you have permission. **Do not use this tool with your main account**; it may lead to account suspension.
+This tool allows you to scrape messages from Discord channels where you have permission. **Do not use this tool with your main account** as it may lead to account suspension.
 
 ---
 
-## Quick Setup Instructions
+# Setup Instructions
 
-### 1. **Install Python**
+### 1. Install Python
 
-- Download Python from [python.org](https://www.python.org/downloads/).
-- During installation, **check the box** that says **Add Python to PATH**.
+- Download Python from [python.org](https://www.python.org/downloads/). (If you do not have it yet)
+- During installation, check the box that says **Add Python to PATH**
 
-### 2. **Install Required Packages**
+### 2. Install Required Packages
 
-1. Open Command Prompt (Windows) or Terminal (macOS/Linux).
+1. Open Command Prompt (Windows) or Terminal (macOS/Linux)
 2. Run the following commands:
-   ```bash
-   pip install requests
-   pip install python-dateutil
-3. Ensure Files Are in the Right Location
-Both the main.py script and config.json file should be on your Desktop for the tool to work correctly.
-4. Modify config.json
-Open the config.json file that is already in the repository.
-Replace the placeholders with your user token (from a secondary account) and channel ID:
-json
-Copy code
-{
-  "token": "YOUR_DISCORD_TOKEN_HERE",
-  "channel_id": "YOUR_CHANNEL_ID_HERE"
-}
-5. Run the Script
-In Command Prompt or Terminal, navigate to your Desktop:
+   - pip install requests
+   - pip install python-dateutil
 
-bash
-Copy code
-cd %USERPROFILE%\Desktop  # For Windows
-or
+### 3. Ensure Files Are in the Right Location
 
-bash
-Copy code
-cd ~/Desktop  # For macOS
-Run the script:
+- Both the `main.py` script and `config.json` file should be on your Desktop for the tool to work correctly
 
-bash
-Copy code
-python main.py
+### 4. Modify `config.json`
+
+1. Open the config.json and change the placeholders to your token and channel id and then save the file
+
+
+### 5. Run the Script
+
+---
+
+## Important Notice
+
+- Use this tool responsibly. Only scrape messages where you have permission
+- I am **NOT** responsible for any misuse of this tool
