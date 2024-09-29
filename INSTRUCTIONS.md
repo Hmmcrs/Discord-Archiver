@@ -19,3 +19,5 @@ Both the `main.py` script and `config.json` file should be on your Desktop for t
 Open the `config.json` file and change the placeholders to [Your Token](https://www.androidauthority.com/get-discord-token-3149920/) and channel ID, then save the file.
 
 ### 5. Run the Script
+
+ 
