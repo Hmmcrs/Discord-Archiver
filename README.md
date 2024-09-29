@@ -1,5 +1,5 @@
 # Discord Message Scraper
-This tool allows you to scrape messages from Discord channels where you have permission.
+This tool allows you to scrape messages from Discord channels where you have **permission.**
 
 ## Features
 - Fetch and log messages from a specific Discord channel.
