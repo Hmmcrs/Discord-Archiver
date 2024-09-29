@@ -12,4 +12,4 @@ This tool allows you to scrape messages from Discord channels where you have per
 - Required packages: `requests`, `python-dateutil`
 
 ## Important
-Please read the `IMPORTANT.md` file before using.
+Please read the [`IMPORTANT.md`](https://github.com/Hmmcrs/Discord-API/blob/main/IMPORTANT.md) file before using.
