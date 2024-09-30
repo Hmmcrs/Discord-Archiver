@@ -6,7 +6,7 @@ from datetime import datetime
 from dateutil import parser
 import json
 
-# Function to find the desktop path
+# Find the desktop path
 def find_desktop():
     onedrive_path = Path.home() / "OneDrive" / "Desktop"
     if onedrive_path.exists():
@@ -18,7 +18,7 @@ def find_desktop():
 
     raise FileNotFoundError("Desktop not found in standard locations.")
 
-# Load configuration from the config.json located on the desktop
+# Load configuration from the config.json
 desktop_path = find_desktop()
 config_path = desktop_path / 'config.json'
 
@@ -46,8 +46,8 @@ def fetch_messages():
     url = f'https://discord.com/api/v10/channels/{channel_id}/messages?limit=100'
     
     try:
-        response = requests.get(url, headers=headers, timeout=10)  # Timeout set to 10 seconds
-        response.raise_for_status()  # Will raise an HTTPError if the HTTP request returned an unsuccessful status code
+        response = requests.get(url, headers=headers, timeout=10)  # Timeout 10 seconds
+        response.raise_for_status()  # HTTPError
 
         if response.status_code == 200:
             messages = response.json()
@@ -87,11 +87,11 @@ def fetch_messages():
         return response.status_code
 
     except requests.exceptions.RequestException as e:
-        # Log the error and continue the loop
+        # Log error and continue loop
         error_message = f"Error fetching messages: {e}\n"
         print(error_message)
         log_error(str(e))
-        time.sleep(5)  # Wait for 5 seconds before retrying
+        time.sleep(5)  # Wait 5 seconds before retrying
         return None
 
 def log_error(message):
@@ -114,7 +114,7 @@ def log_messages(messages):
                 formatted_time = 'Unknown time'
 
             # Log the message
-            if all(ord(char) < 128 for char in content):  # Only log ASCII characters
+            if all(ord(char) < 128 for char in content):
                 if first_run and index == 0:
                     f.write(f"---\nUser: {username} (ID: {user_id})\n")
                     f.write(f"  Time: {formatted_time} (newest at script start)\n")
@@ -126,7 +126,6 @@ def log_messages(messages):
                     f.write(f"  Content: {content}\n")
                     f.write("---\n\n")
             else:
-                # Log the message as ignored due to unsupported characters
                 f.write(f"---\nUser: {username} (ID: {user_id})\n")
                 f.write(f"  Time: {formatted_time}\n")
                 f.write(f"  Content: Ignored due to unsupported characters\n")
@@ -136,5 +135,5 @@ if __name__ == "__main__":
     while True:
         status = fetch_messages()
         if status == 200:
-            time.sleep(0.2)  # Wait before fetching again
+            time.sleep(0.2)  # Fetching cooldown. (can be changed)
 
