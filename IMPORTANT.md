@@ -7,3 +7,4 @@ The intended use of this script is to archive or scrape messages in servers you 
 
 ## Unauthorized Usage
 Scraping in servers you dont own or have permission in is considered **Unauthorized Usage**
+
