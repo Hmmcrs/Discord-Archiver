@@ -1,10 +1,10 @@
-# Discord Message Scraper
-This tool allows you to scrape messages from Discord channels where you have **permission.**
+# Discord Message Archiver
+This tool allows you to archive messages from Discord channels where you have **permission.**
 
 ## Features
-- Fetch and log messages from a specific Discord channel.
-- Only logs messages sent after the script starts.
-- Logs messages in a text file and handles errors.
+- Archive messages from a specific Discord channel.
+- Only archives messages sent after the script starts.
+- Saves messages in a text file and handles errors.
 
 ## Requirements
 - Python 3.x
