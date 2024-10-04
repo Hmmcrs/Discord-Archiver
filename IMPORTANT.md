@@ -7,4 +7,3 @@ The intended use of this script is to archive messages in servers you **own** or
 
 ## Unauthorized Usage
 Saving messages in servers you dont own or have permission in is considered **Unauthorized Usage**
-
