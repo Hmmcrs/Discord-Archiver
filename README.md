@@ -1,5 +1,4 @@
 # Discord Message Archiver
-This tool allows you to archive messages from Discord channels where you have **permission.**
 
 ## Features
 - Archive messages from a specific Discord channel.
