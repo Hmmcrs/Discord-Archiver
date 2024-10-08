@@ -1,6 +1,6 @@
 # Important Notice
 
-This script is considered as a **selfbot** which is against Discord ToS. I recommned using another account for this instead of your main one.
+This script is considered as a **selfbot** which is against Discord ToS. I recommend using another account for this instead of your main one.
 
 ## Intended Use
 The intended use of this script is to archive messages in servers you **own** or have **permission** to do so.
