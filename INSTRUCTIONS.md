@@ -8,17 +8,15 @@ Run the `Requirements.bat` file
 
 ## If you prefer to do it manually
 
-1. **Open Command Prompt**
-   - Press `Windows + R`, type `cmd`, and press Enter.
+ - Press `Windows + R`, type `cmd`, and press Enter.
 
-2. **Install Packages**
    - Run the following commands:
      ```bash
      pip install requests
      pip install python-dateutil
      ```
 
-- If that doesn’t work, run these:
+   - If that doesn’t work, run these:
      ```bash
      py -m pip install requests
      py -m pip install python-dateutil
