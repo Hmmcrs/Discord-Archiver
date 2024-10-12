@@ -4,7 +4,7 @@
 Download Python from [python.org](https://www.python.org/downloads/) (if you do not have it yet).
 
 ### 2. Install Required Packages
-Run the `requirements.bat` file
+Run the `Requirements.bat` file
 
 ## If you prefer to do it manually
 
