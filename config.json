@@ -1,4 +1,4 @@
 {
-  "token": "YOUR_DISCORD_TOKEN_HERE",
-  "channel_id": "YOUR_CHANNEL_ID_HERE"
+  "token": "DISCORD_TOKEN",
+  "channel_id": "CHANNEL_ID"
 }
