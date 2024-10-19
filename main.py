@@ -16,14 +16,14 @@ def find_desktop():
     if desktop_path.exists():
         return desktop_path
 
-    raise FileNotFoundError("Desktop not found in standard locations.")
+    raise FileNotFoundError("Desktop not found.")
 
 # Load configuration from the config.json
 desktop_path = find_desktop()
 config_path = desktop_path / 'config.json'
 
 if not config_path.exists():
-    raise FileNotFoundError(f"config.json not found on your desktop at {config_path}")
+    raise FileNotFoundError(f"config.json not found at {config_path}")
 
 with open(config_path, 'r') as config_file:
     config = json.load(config_file)
