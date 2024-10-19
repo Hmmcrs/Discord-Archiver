@@ -23,7 +23,7 @@ Run the `Requirements.bat` file
      ```
 
 ### 3. Ensure Files Are in the Right Location
-Both the `main.py` script and `config.json` file should be on your Desktop for the tool to work.
+Both the `main.py` script and `config.json` file should be on your desktop for the tool to work.
 
 ### 4. Modify `config.json`
 Open the `config.json` file and change the placeholders to [Your Token](https://www.androidauthority.com/get-discord-token-3149920/) and channel ID, then save the file.
