@@ -5,5 +5,5 @@ py -m pip install python-dateutil 2>nul
 pip install requests 2>nul
 pip install python-dateutil 2>nul
 
-echo Installation completed. Press any key to finish installation.
+echo Press any key to end.
 pause >nul
