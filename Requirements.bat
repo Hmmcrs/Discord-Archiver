@@ -5,5 +5,5 @@ py -m pip install python-dateutil 2>nul
 pip install requests 2>nul
 pip install python-dateutil 2>nul
 
-echo Press any key to end.
+echo Packages installed press any key to close
 pause >nul
