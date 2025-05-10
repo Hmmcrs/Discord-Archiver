@@ -6,7 +6,6 @@ from datetime import datetime
 from dateutil import parser
 import json
 
-# Find the desktop path
 def find_desktop():
     onedrive_path = Path.home() / "OneDrive" / "Desktop"
     if onedrive_path.exists():
@@ -18,7 +17,6 @@ def find_desktop():
 
     raise FileNotFoundError("Desktop not found.")
 
-# Load configuration from the config.json
 desktop_path = find_desktop()
 config_path = desktop_path / 'config.json'
 
@@ -46,8 +44,8 @@ def fetch_messages():
     url = f'https://discord.com/api/v10/channels/{channel_id}/messages?limit=100'
     
     try:
-        response = requests.get(url, headers=headers, timeout=10)  # Timeout 10 seconds
-        response.raise_for_status()  # HTTPError
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
 
         if response.status_code == 200:
             messages = response.json()
@@ -87,11 +85,10 @@ def fetch_messages():
         return response.status_code
 
     except requests.exceptions.RequestException as e:
-        # Log error and continue loop
         error_message = f"Error fetching messages: {e}\n"
         print(error_message)
         log_error(str(e))
-        time.sleep(5)  # Wait 5 seconds before retrying
+        time.sleep(5)
         return None
 
 def log_error(message):
@@ -113,7 +110,6 @@ def log_messages(messages):
             except Exception:
                 formatted_time = 'Unknown time'
 
-            # Log the message
             if all(ord(char) < 128 for char in content):
                 if first_run and index == 0:
                     f.write(f"---\nUser: {username} (ID: {user_id})\n")
@@ -135,5 +131,5 @@ if __name__ == "__main__":
     while True:
         status = fetch_messages()
         if status == 200:
-            time.sleep(0.2)  # Fetching cooldown. (can be changed)
+            time.sleep(0.2)  # cooldown. (can be changed)
 
