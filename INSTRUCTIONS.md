@@ -1,32 +1,22 @@
 # Setup Instructions
 
 ### 1. Install Python
-Download Python from [python.org](https://www.python.org/downloads/) (if you do not have it yet).
 
 ### 2. Install Required Packages
-Run the `Requirements.bat` file
+Run `Requirements.bat`
 
 ## If you prefer to do it manually
 
- - Press `Windows + R`, type `cmd`, and press Enter.
-
-   - Run the following commands:
-     ```bash
+   - Open cmd and run these
+     ```
      pip install requests
      pip install python-dateutil
      ```
 
-   - If that doesn’t work, run these:
-     ```bash
-     py -m pip install requests
-     py -m pip install python-dateutil
-     ```
-
-### 3. Ensure Files Are in the Right Location
-Both the `main.py` script and `config.json` file should be on your desktop for the tool to work.
-
+### 3. File Location
+Both `main.py` and `config.json` need to be on your desktop
 ### 4. Modify `config.json`
-Open the `config.json` file and change the placeholders to [Your Token](https://www.androidauthority.com/get-discord-token-3149920/) and channel ID, then save the file.
+Open `config.json` and change the placeholders to [Your Token](https://www.androidauthority.com/get-discord-token-3149920/) and channel ID, then save the file.
 
 ### 5. Run the Script
 
