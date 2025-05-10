@@ -1,12 +1,12 @@
 # Discord Message Archiver
 
 ## Features
-- Archive messages from a specific Discord channel.
-- Saves messages in a text file and handles errors.
+- Archive messages from a specific Discord channel
+- Saves messages in a text file
 
 ## Requirements
 - Python 3.x
-- Required packages: `requests`, `python-dateutil`
+- Required packages `requests`, `python-dateutil`
 
 ## Important
-Please read `IMPORTANT.md` before using.
+Read `IMPORTANT.md` before using
