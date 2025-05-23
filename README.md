@@ -6,7 +6,7 @@
 
 ## Requirements
 - Python 3.x
-- Required packages `requests`, `python-dateutil`
+- Packages `requests`, `python-dateutil`
 
 ## Important
 Read `IMPORTANT.md` before using
