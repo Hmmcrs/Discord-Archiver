@@ -1,7 +1,7 @@
 # Discord Message Archiver
 
 ## Features
-- Archive messages from a specific Discord channel
+- Archive messages from a specific Discord channel 
 - Saves messages in a text file
 
 ## Requirements
